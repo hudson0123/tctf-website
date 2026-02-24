@@ -10,7 +10,7 @@ export default function About() {
       <SEO title="About Us" />
       <Navbar />
 
-      <section className="pt-32 pb-24 bg-gray-50 border-b border-gray-100">
+      <section className="pt-32 pb-16 bg-gray-50 border-b border-gray-100">
         <div className="section-container">
           <p className="text-primary font-bold text-sm uppercase tracking-widest mb-4 animate-reveal">Our Story</p>
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8 animate-reveal">

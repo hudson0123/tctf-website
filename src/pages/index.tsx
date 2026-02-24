@@ -13,7 +13,7 @@ export default function Home() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden bg-gray-50 border-b border-gray-100">
+      <section className="relative min-h-[70vh] flex items-center pt-24 pb-12 overflow-hidden bg-gray-50 border-b border-gray-100">
         <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 to-transparent z-0" />
         <div className="section-container relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="flex flex-col items-start animate-reveal">
@@ -35,7 +35,6 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          
           <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl animate-reveal-delayed">
             <div className="absolute inset-0 bg-primary/20 flex items-center justify-center text-white/50">
               <svg className="w-24 h-24" fill="currentColor" viewBox="0 0 24 24">
@@ -103,8 +102,8 @@ export default function Home() {
       </section>
 
       {/* Support Tiers / Therapy Info Preview */}
-      <section className="py-24 bg-gray-50 border-y border-gray-100">
-        <div className="section-container text-center mb-16">
+      <section className="bg-gray-50 border-y border-gray-100">
+        <div className="section-container text-center">
           <p className="text-primary font-bold text-sm uppercase tracking-widest mb-4">How We Help</p>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Accessing Care</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">

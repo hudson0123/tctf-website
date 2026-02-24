@@ -9,7 +9,7 @@ export default function Donate() {
       <SEO title="Donate" />
       <Navbar />
 
-      <section className="pt-32 pb-24 bg-gray-50 border-b border-gray-100">
+      <section className="pt-32 pb-12 bg-gray-50 border-b border-gray-100">
         <div className="section-container text-center">
           <p className="text-primary font-bold text-sm uppercase tracking-widest mb-4">Support Our Cause</p>
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8">

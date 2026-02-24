@@ -60,9 +60,6 @@ export default function BoardOfDirectors() {
       </section>
 
       <section className="py-24 bg-primary text-white overflow-hidden relative">
-        <div className="absolute inset-0 bg-white/5 opacity-50 flex items-center justify-center font-bold text-[20vw] select-none pointer-events-none">
-          TCTF
-        </div>
         <div className="section-container text-center relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">Interested in joining our board?</h2>
           <p className="text-xl text-white/80 max-w-2xl mx-auto mb-10">

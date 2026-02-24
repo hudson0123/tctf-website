@@ -9,12 +9,12 @@ export default function Mission() {
       <SEO title="Our Mission" />
       <Navbar />
 
-      <section className="pt-32 pb-24 bg-primary text-white overflow-hidden relative">
-         <div className="absolute inset-0 bg-white/5 animate-pulse" style={{ clipPath: 'polygon(0 0, 100% 0, 80% 100%, 0% 100%)' }} />
+      <section className="pt-40 pb-24 bg-gray-50 border-b border-gray-100 overflow-hidden relative">
+         <div className="absolute inset-0 bg-primary/5 animate-pulse" />
          <div className="section-container relative z-10">
-          <p className="text-white/70 font-bold text-sm uppercase tracking-widest mb-4">Our Purpose</p>
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight max-w-4xl">
-            Access to mental health is a <span className="opacity-70 underline decoration-2 decoration-white/30 underline-offset-8">fundamental right</span>.
+          <p className="text-primary font-bold text-sm uppercase tracking-widest mb-4">Our Purpose</p>
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight max-w-4xl">
+            Access to mental health is a <span className="text-primary underline decoration-2 decoration-primary/30 underline-offset-8">fundamental right</span>.
           </h1>
         </div>
       </section>

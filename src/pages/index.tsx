@@ -37,22 +37,22 @@ export default function Home() {
             </div>
           </div>
           {/* Circle Design — 2 Children (asymmetrical) */}
-          <div className="relative w-full aspect-[4/3] max-w-xl mx-auto animate-reveal-delayed">
+          <div className="relative w-full aspect-square max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xl mx-auto animate-reveal-delayed">
             {/* Scattered accent dots */}
-            <div className="absolute top-[8%] left-[10%] w-3 h-3 rounded-full bg-amber-300/50 animate-pulse" />
-            <div className="absolute bottom-[15%] right-[12%] w-4 h-4 rounded-full bg-sky-300/40 animate-pulse" />
-            <div className="absolute top-[45%] right-[5%] w-2.5 h-2.5 rounded-full bg-primary/20 animate-pulse" />
+            <div className="absolute top-[8%] left-[10%] w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-amber-300/50 animate-pulse" />
+            <div className="absolute bottom-[15%] right-[12%] w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-sky-300/40 animate-pulse" />
+            <div className="absolute top-[45%] right-[5%] w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-primary/20 animate-pulse" />
 
             {/* Child 1 — Large */}
-            <div className="absolute top-[0%] right-[0%] w-64 h-64 md:w-80 md:h-80">
-              <div className="relative w-full h-full rounded-full bg-gradient-to-br from-sky-100 to-sky-200 border-4 border-white shadow-2xl ring-4 ring-sky-300/25 overflow-hidden">
+            <div className="absolute top-[0%] right-[0%] w-[65%] aspect-square">
+              <div className="relative w-full h-full rounded-full bg-gradient-to-br from-sky-100 to-sky-200 border-3 sm:border-4 border-white shadow-2xl ring-2 sm:ring-4 ring-sky-300/25 overflow-hidden">
                 <Image src="/images/hero-1.jpg" alt="Child 1" fill className="object-cover" />
               </div>
             </div>
 
             {/* Child 2 — Smaller, overlapping bottom-left */}
-            <div className="absolute bottom-[-5%] left-[15%] w-52 h-52 md:w-64 md:h-64">
-              <div className="relative w-full h-full rounded-full bg-gradient-to-br from-amber-100 to-amber-200 border-4 border-white shadow-xl ring-4 ring-amber-300/25 overflow-hidden">
+            <div className="absolute bottom-[-5%] left-[5%] w-[55%] aspect-square">
+              <div className="relative w-full h-full rounded-full bg-gradient-to-br from-amber-100 to-amber-200 border-3 sm:border-4 border-white shadow-xl ring-2 sm:ring-4 ring-amber-300/25 overflow-hidden">
                 <Image src="/images/hero-2.jpg" alt="Child 2" fill className="object-cover" />
               </div>
             </div>

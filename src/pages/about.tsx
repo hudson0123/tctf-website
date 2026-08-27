@@ -22,7 +22,7 @@ export default function About() {
                 Our foundation was born out of a simple but powerful observation: in the Northeast Georgia area, many children were not receiving the mental health support they desperately needed because their families simply couldn't afford it.
               </p>
               <p>
-                Our founder, Robin, and a group of dedicated community members saw this gap and decided to take action. They envisioned a community where financial status never dictates a child's access to mental health.
+                Our founder and a group of dedicated early childhood key stakeholders and community members saw this gap and decided to take action. They envisioned a community where financial status never dictates a child's timely access to mental health.
               </p>
               <p>
                 Today, as a 501(c)(3) non-profit, we partner with local schools, therapists, and families to identify children in need and provide the direct financial assistance required to begin their healing journey.
@@ -32,8 +32,8 @@ export default function About() {
         </div>
       </section>
 
-      <section className="py-24 bg-white">
-        <div className="section-container grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+      <section className="py-16 bg-white">
+        <div className="section-container grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="bg-primary/5 p-12 rounded-3xl border border-primary/10">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Commitment</h2>
             <p className="text-gray-600 leading-relaxed mb-8">

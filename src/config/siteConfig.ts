@@ -9,15 +9,14 @@ export const siteConfig = {
     phone: "(706) 555-0123",
     address: "Athens, GA",
   },
-  
+
   navigation: [
     { name: "Home", href: "/" },
-    { 
-      name: "About", 
+    {
+      name: "About",
       href: "/about",
       dropdown: [
         { name: "Who We Are", href: "/about" },
-        { name: "Board of Directors", href: "/about/board" },
       ]
     },
     { name: "Mission", href: "/mission" },
@@ -42,17 +41,26 @@ export const siteConfig = {
 
   mission: {
     statement: "Our mission is to facilitate access to therapeutic services for children and their family system in the Northeast Georgia area.",
-    vision: "A community where every child has the support they need to thrive emotionally and mentally.",
-    values: ["Accessibility", "Compassion", "Community", "Integrity"],
-    nonDiscrimination: "We do not and shall not discriminate on the basis of race, color, religion (creed), gender, gender expression, age, national origin (ancestry), disability, marital status, sexual orientation, or military status, in any of its activities or operations.",
+    vision: "Our vision is that every child in Northeast Georgia has access to comprehensive, trauma-informed therapeutic services within the nurturing context of their family system.",
+    values: [
+      { name: "Integrity", description: "We strive to be honest, transparent and respectful." },
+      { name: "Impact", description: "We provide access to life-changing interventions." },
+      { name: "Community", description: "We are a diverse group of people working together towards a common goal." },
+      { name: "Trauma Informed", description: "We recognize the overarching impact of trauma on an individual and family system." },
+      { name: "Holistic Interventions", description: "We recognize the whole person in the context of their family system, community, and experiences." },
+    ],
+    nonDiscrimination: "The Thriving Children Therapy Fund does not and shall not discriminate on the basis of race, color, religion (creed), gender, gender expression, age, national origin (ancestry), disability, marital status, sexual orientation, or military status, in any of its activities or operations. These activities include, but are not limited to, hiring and firing of staff, selection of volunteers and vendors, and provision of services. We are committed to providing an inclusive and welcoming environment for all members of our staff, clients, volunteers, subcontractors, vendors, and clients.\n\nThe Thriving Children Therapy Fund is an equal opportunity employer. We will not discriminate and will take affirmative action measures to ensure against discrimination in employment, recruitment, advertisements for employment, compensation, termination, upgrading, promotions, and other conditions of employment against any employee or job applicant on the bases of race, color, gender, national origin, age, religion, creed, disability, veteran's status, sexual orientation, gender identity or gender expression.",
   },
 
   donate: {
-    givebutterUrl: "https://givebutter.com/tctf-dummy",
+    givebutterUrl: "https://givebutter.com/tctf",
   },
 
   therapy: {
-    intakeFormUrl: "https://docs.google.com/forms/d/e/dummy/viewform",
+    intakeFormUrl: "https://forms.gle/1quTf36GAcewE39T7",
+    surveyCaregiver: "https://forms.gle/a7h75sct4kHVefBfA",
+    surveyParticipant: "https://forms.gle/FUJpfXzFZNWK5dAQ8",
+    therapistApplicationUrl: "https://forms.gle/6cKPKgtWw1obTZv59",
   },
 
   socials: [

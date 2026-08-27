@@ -48,7 +48,7 @@ h6 {
 }
 
 .section-container {
-  @apply max-w-7xl mx-auto px-6 py-16 md:py-24;
+  @apply max-w-7xl mx-auto px-6 py-10 md:py-16;
 }
 
 @keyframes bounce-down {

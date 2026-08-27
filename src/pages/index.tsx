@@ -61,10 +61,9 @@ export default function Home() {
       </section>
 
       {/* Stats / Impact Bar */}
-      <section className="bg-white py-12 border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
+      <section className="bg-white py-8 border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
-            { label: "Children Helped", value: "100+" },
             { label: "Community Support", value: "Athens Area" },
             { label: "Non-profit Status", value: "501(c)(3)" },
             { label: "Founded", value: "2024" },
@@ -77,96 +76,64 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Mission Preview */}
-      <section className="py-24 bg-white">
-        <div className="section-container grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-           <div className="order-2 lg:order-1 relative aspect-square rounded-2xl overflow-hidden shadow-xl">
-             <div className="absolute inset-0 bg-gray-200 flex items-center justify-center text-gray-400">
-                <svg className="w-24 h-24" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                </svg>
-             </div>
-           </div>
-           <div className="order-1 lg:order-2">
-             <p className="text-primary font-bold text-sm uppercase tracking-widest mb-4">Our Vision</p>
-             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight">
-               Every child deserves a <span className="text-primary">bright future</span>.
-             </h2>
-             <p className="text-lg text-gray-600 leading-relaxed mb-10">
-               {siteConfig.mission.statement}
-             </p>
-             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
-               {siteConfig.mission.values.map((value) => (
-                 <li key={value} className="flex items-center gap-3 text-gray-700 font-medium">
-                   <svg className="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                   </svg>
-                   {value}
-                 </li>
-               ))}
-             </ul>
-             <Link href="/mission" className="font-bold text-primary group flex items-center gap-2">
-               Read Our Mission
-               <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-               </svg>
-             </Link>
-           </div>
+      {/* Mission Preview — image left, text right */}
+      <section className="py-16 bg-white">
+        <div className="section-container grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="relative aspect-[4/5] rounded-2xl overflow-hidden">
+            <Image src="/images/group-1.jpg" alt="Group of children" fill className="object-cover" />
+          </div>
+          <div>
+            <p className="text-primary font-bold text-sm uppercase tracking-widest mb-4">Our Vision</p>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+              Every child deserves a <span className="text-primary">bright future</span>.
+            </h2>
+            <p className="text-lg text-gray-600 leading-relaxed mb-8">
+              {siteConfig.mission.statement}
+            </p>
+            <Link href="/mission" className="font-bold text-primary group inline-flex items-center gap-2 hover:underline">
+              Read Our Mission
+              <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          </div>
         </div>
       </section>
 
-      {/* Support Tiers / Therapy Info Preview */}
-      <section className="bg-gray-50 border-y border-gray-100">
-        <div className="section-container text-center">
-          <p className="text-primary font-bold text-sm uppercase tracking-widest mb-4">How We Help</p>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Accessing Care</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            We bridge the gap between financial need and necessary mental health services for children in Athens.
-          </p>
-        </div>
-        <div className="section-container pt-0 grid grid-cols-1 md:grid-cols-3 gap-8">
-          {[
-            {
-              title: "Assessment",
-              desc: "Connecting families with initial screenings and mental health evaluations.",
-              icon: (
-                <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                </svg>
-              )
-            },
-            {
-              title: "Financial Aid",
-              desc: "Providing direct funding for therapy sessions for children in need.",
-              icon: (
-                <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-              )
-            },
-            {
-              title: "Expert Network",
-              desc: "Partnering with licensed local therapists to ensure quality care.",
-              icon: (
-                <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.631.316a6 6 0 01-3.86.517L5.281 15.28a2 2 0 01-1.022-.547l-1.428-1.428a2 2 0 01-.547-1.022l-.477-2.387a6 6 0 01.517-3.86l.316-.631a6 6 0 01.517-3.86l-.477-2.387a2 2 0 01.547-1.022l1.428-1.428a2 2 0 011.022-.547l2.387-.477a6 6 0 013.86.517l.631-.316a6 6 0 013.86-.517l2.387.477a2 2 0 011.022.547l1.428 1.428a2 2 0 01.547 1.022l.477 2.387a6 6 0 01-.517 3.86l-.316.631a6 6 0 01-.517 3.86l.477 2.387a2 2 0 01-.547 1.022l-1.428 1.428z" />
-                </svg>
-              )
-            }
-          ].map((item) => (
-            <div key={item.title} className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300">
-              <div className="w-16 h-16 bg-primary/5 rounded-2xl flex items-center justify-center mb-6">
-                {item.icon}
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">{item.title}</h3>
-              <p className="text-gray-600 leading-relaxed text-sm mb-6">
-                {item.desc}
-              </p>
-              <Link href="/therapy" className="text-primary text-sm font-bold hover:underline">
-                Learn how it works
-              </Link>
+      {/* Accessing Care — text left, image right */}
+      <section className="py-16 bg-gray-50 border-y border-gray-100">
+        <div className="section-container grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <p className="text-primary font-bold text-sm uppercase tracking-widest mb-4">How We Help</p>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Accessing Care</h2>
+            <p className="text-lg text-gray-600 leading-relaxed mb-10">
+              We bridge the gap between financial need and necessary mental health services for children in Athens.
+            </p>
+            <div className="space-y-6 mb-10">
+              {[
+                { step: "1", title: "Assessment", desc: "Connecting families with initial screenings and mental health evaluations." },
+                { step: "2", title: "Financial Aid", desc: "Providing direct funding for therapy sessions for children in need." },
+                { step: "3", title: "Begin Therapy", desc: "Partnering with licensed local therapists to ensure quality care." },
+              ].map((item) => (
+                <div key={item.step} className="flex gap-4">
+                  <span className="text-2xl font-bold text-primary/20 shrink-0 w-8">{item.step}</span>
+                  <div>
+                    <h3 className="text-base font-bold text-gray-900 mb-1">{item.title}</h3>
+                    <p className="text-gray-500 leading-relaxed text-sm">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
+            <Link href="/therapy" className="text-primary font-bold group inline-flex items-center gap-2 hover:underline">
+              See the full process
+              <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          </div>
+          <div className="relative aspect-[4/5] rounded-2xl overflow-hidden">
+            <Image src="/images/child-1.jpg" alt="Child smiling" fill className="object-cover" />
+          </div>
         </div>
       </section>
 

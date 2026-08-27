@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
@@ -35,13 +36,26 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl animate-reveal-delayed">
-            <div className="absolute inset-0 bg-primary/20 flex items-center justify-center text-white/50">
-              <svg className="w-24 h-24" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-              </svg>
+          {/* Circle Design — 2 Children (asymmetrical) */}
+          <div className="relative w-full aspect-[4/3] max-w-xl mx-auto animate-reveal-delayed">
+            {/* Scattered accent dots */}
+            <div className="absolute top-[8%] left-[10%] w-3 h-3 rounded-full bg-amber-300/50 animate-pulse" />
+            <div className="absolute bottom-[15%] right-[12%] w-4 h-4 rounded-full bg-sky-300/40 animate-pulse" />
+            <div className="absolute top-[45%] right-[5%] w-2.5 h-2.5 rounded-full bg-primary/20 animate-pulse" />
+
+            {/* Child 1 — Large */}
+            <div className="absolute top-[0%] right-[0%] w-64 h-64 md:w-80 md:h-80">
+              <div className="relative w-full h-full rounded-full bg-gradient-to-br from-sky-100 to-sky-200 border-4 border-white shadow-2xl ring-4 ring-sky-300/25 overflow-hidden">
+                <Image src="/images/hero-1.jpg" alt="Child 1" fill className="object-cover" />
+              </div>
             </div>
-            {/* Image would go here: <Image ... /> */}
+
+            {/* Child 2 — Smaller, overlapping bottom-left */}
+            <div className="absolute bottom-[-5%] left-[15%] w-52 h-52 md:w-64 md:h-64">
+              <div className="relative w-full h-full rounded-full bg-gradient-to-br from-amber-100 to-amber-200 border-4 border-white shadow-xl ring-4 ring-amber-300/25 overflow-hidden">
+                <Image src="/images/hero-2.jpg" alt="Child 2" fill className="object-cover" />
+              </div>
+            </div>
           </div>
         </div>
       </section>

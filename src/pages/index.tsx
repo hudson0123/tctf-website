@@ -3,7 +3,6 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
-import NewsletterSignup from "@/components/NewsletterSignup";
 import FloatingDonateButton from "@/components/FloatingDonateButton";
 import { siteConfig } from "@/config/siteConfig";
 
@@ -137,7 +136,6 @@ export default function Home() {
         </div>
       </section>
 
-      <NewsletterSignup />
       <Footer />
       <FloatingDonateButton />
     </div>

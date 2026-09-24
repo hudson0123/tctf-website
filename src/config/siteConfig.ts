@@ -12,17 +12,10 @@ export const siteConfig = {
 
   navigation: [
     { name: "Home", href: "/" },
-    {
-      name: "About",
-      href: "/about",
-      dropdown: [
-        { name: "Who We Are", href: "/about" },
-      ]
-    },
+    { name: "About", href: "/about" },
     { name: "Mission", href: "/mission" },
     { name: "Therapy", href: "/therapy" },
     { name: "Contact", href: "/contact" },
-    { name: "Events", href: "/events" },
   ],
 
   colors: {

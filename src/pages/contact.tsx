@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
-import ContactForm from "@/components/ContactForm";
 import { siteConfig } from "@/config/siteConfig";
 
 export default function Contact() {
@@ -25,7 +24,7 @@ export default function Contact() {
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
             {/* Contact Details */}
-            <div className="lg:col-span-4 flex flex-col gap-12">
+            <div className="lg:col-span-5 flex flex-col gap-12">
               <div>
                 <h3 className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-6">Contact Info</h3>
                 <ul className="space-y-8">
@@ -84,11 +83,11 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Form */}
-            <div className="lg:col-span-8">
+            {/* Form — hidden for now */}
+            {/* <div className="lg:col-span-8">
               <h3 className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-6">Send a Message</h3>
               <ContactForm />
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

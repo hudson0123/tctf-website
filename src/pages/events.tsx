@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
-import NewsletterSignup from "@/components/NewsletterSignup";
 import { siteConfig } from "@/config/siteConfig";
 
 const events = [
@@ -78,7 +77,6 @@ export default function Events() {
         </div>
       </section>
 
-      <NewsletterSignup />
       <Footer />
     </div>
   );

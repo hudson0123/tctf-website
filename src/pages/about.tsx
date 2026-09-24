@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
-import NewsletterSignup from "@/components/NewsletterSignup";
 import { siteConfig } from "@/config/siteConfig";
 
 export default function About() {
@@ -58,7 +57,6 @@ export default function About() {
         </div>
       </section>
 
-      <NewsletterSignup />
       <Footer />
     </div>
   );

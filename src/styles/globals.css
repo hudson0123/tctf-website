@@ -44,11 +44,11 @@ h6 {
 }
 
 .btn-primary {
-  @apply bg-primary text-primary-foreground px-6 py-3 rounded-md font-semibold transition-opacity hover:opacity-90 active:scale-95;
+  @apply bg-primary text-primary-foreground px-5 sm:px-6 py-3 min-h-[44px] rounded-md font-semibold transition-opacity hover:opacity-90 active:scale-95;
 }
 
 .section-container {
-  @apply max-w-7xl mx-auto px-4 sm:px-6 py-6 sm:py-8 md:py-12;
+  @apply max-w-7xl mx-auto px-4 sm:px-6 py-4 sm:py-6 md:py-10;
 }
 
 @keyframes bounce-down {
@@ -88,7 +88,7 @@ h6 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 8rem;
+  height: 10rem;
   width: auto;
   object-fit: contain;
   z-index: 101;
@@ -97,10 +97,10 @@ h6 {
 
 @keyframes splash-logo-move {
   to {
-    top: 0.75rem;
+    top: 0.5rem;
     left: 1rem;
     transform: translate(0, 0);
-    height: 4rem;
+    height: 2.5rem;
   }
 }
 
@@ -111,10 +111,36 @@ h6 {
 
   @keyframes splash-logo-move {
     to {
-      top: 1.5rem;
+      top: 0.5rem;
       left: 1.5rem;
       transform: translate(0, 0);
-      height: 7rem;
+      height: 3rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  @keyframes splash-logo-move {
+    to {
+      top: 0.5rem;
+      left: 1.5rem;
+      transform: translate(0, 0);
+      height: 3.5rem;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .splash-logo {
+    height: 14rem;
+  }
+
+  @keyframes splash-logo-move {
+    to {
+      top: 0.5rem;
+      left: 1.5rem;
+      transform: translate(0, 0);
+      height: 3.5rem;
     }
   }
 }

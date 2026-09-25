@@ -9,10 +9,10 @@ export default function About() {
       <SEO title="About Us" />
       <Navbar />
 
-      <section className="pt-24 sm:pt-32 pb-10 bg-gray-50 border-b border-gray-100">
+      <section className="pt-36 sm:pt-44 pb-10 bg-gray-50 border-b border-gray-100">
         <div className="section-container">
           <p className="text-primary font-bold text-sm uppercase tracking-widest mb-4 animate-reveal">Our Story</p>
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-6 animate-reveal">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 animate-reveal">
             Who We Are & <span className="text-primary">How We Began</span>
           </h1>
           <div className="max-w-3xl animate-reveal-delayed">
@@ -32,18 +32,13 @@ export default function About() {
       </section>
 
       <section className="py-10 bg-white">
-        <div className="section-container grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div className="bg-primary/5 p-6 sm:p-10 rounded-2xl sm:rounded-3xl border border-primary/10">
+        <div className="section-container grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 items-center">
+          <div className="bg-primary/5 p-4 sm:p-6 md:p-10 rounded-2xl sm:rounded-3xl border border-primary/10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Our Commitment</h2>
             <p className="text-gray-600 leading-relaxed mb-6">
-              We are committed to transparency, inclusivity, and rapid action. Every dollar donated goes directly into a fund specifically for children's therapy costs.
+              We are committed to transparency, inclusivity, and rapid action. 95% of every dollar donated goes into a fund specifically for children&apos;s therapy costs.
             </p>
-            <div className="flex flex-col gap-4">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-2xl font-bold text-primary italic">501</div>
-                <p className="text-sm text-gray-700 font-bold uppercase tracking-wider">Registered 501(c)(3) Non-Profit</p>
-              </div>
-            </div>
+            <p className="text-sm text-gray-700 font-bold uppercase tracking-wider">Registered 501(c)(3) Non-Profit</p>
           </div>
           <div>
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Looking Forward</h2>

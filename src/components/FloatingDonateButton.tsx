@@ -17,7 +17,7 @@ export default function FloatingDonateButton() {
   return (
     <Link 
       href="/donate"
-      className={`md:hidden fixed bottom-6 right-6 z-[60] bg-primary text-white px-6 py-4 rounded-full font-bold shadow-2xl transition-all duration-500 flex items-center gap-2 ${
+      className={`md:hidden fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-[60] bg-primary text-white px-5 py-3 sm:px-6 sm:py-4 rounded-full font-bold text-sm sm:text-base shadow-2xl transition-all duration-500 flex items-center gap-2 ${
         visible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0 pointer-events-none"
       }`}
     >

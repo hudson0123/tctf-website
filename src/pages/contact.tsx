@@ -10,10 +10,10 @@ export default function Contact() {
       <SEO title="Contact Us" />
       <Navbar />
 
-      <section className="pt-32 pb-10 bg-white">
+      <section className="pt-36 sm:pt-44 pb-10 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <p className="text-primary font-bold text-sm uppercase tracking-widest mb-3">Get In Touch</p>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
             Contact <span className="text-primary">Us</span>
           </h1>
           <p className="text-sm sm:text-base text-gray-600 leading-relaxed mb-6">
@@ -68,7 +68,7 @@ export default function Contact() {
                   { label: "Make a donation", href: "/donate" },
                   { label: "Learn about our mission", href: "/mission" },
                 ].map((link) => (
-                  <Link key={link.href} href={link.href} className="text-white font-medium text-sm hover:underline">
+                  <Link key={link.href} href={link.href} className="text-white font-medium text-sm hover:underline py-1.5">
                     {link.label}
                   </Link>
                 ))}

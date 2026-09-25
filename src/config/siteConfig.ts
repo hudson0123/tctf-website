@@ -5,8 +5,8 @@ export const siteConfig = {
     location: "Athens, Georgia",
     nonProfitStatus: "501(c)(3) non-profit charitable organization",
     ein: "39-2793337",
-    email: "info@tctfund.org",
-    phone: "(706) 555-0123",
+    email: "info@thrivingchildrentherapy-fund.com",
+    phone: "(706) 431-7128",
     address: "Athens, GA",
   },
 
@@ -15,6 +15,7 @@ export const siteConfig = {
     { name: "About", href: "/about" },
     { name: "Mission", href: "/mission" },
     { name: "Therapy", href: "/therapy" },
+    { name: "Events", href: "/events" },
     { name: "Contact", href: "/contact" },
   ],
 
@@ -26,8 +27,8 @@ export const siteConfig = {
   },
 
   hero: {
-    title: "Supporting the mental health of our community's children.",
-    mission: "Thriving Children Therapy Fund provides financial assistance for children's mental health services in the Athens area.",
+    title: "Every child deserves access to mental health care.",
+    mission: "We fund therapy for children in Athens, GA — so no family has to choose between cost and care.",
     cta: "Donate Now",
     ctaLink: "/donate",
   },

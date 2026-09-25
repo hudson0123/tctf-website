@@ -48,32 +48,14 @@ export default function Therapy() {
       <SEO title="Therapy Services" />
       <Navbar />
 
-      {/* Hero */}
-      <section className="pt-24 sm:pt-32 pb-10 bg-gray-50 border-b border-gray-100 relative overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute top-10 right-[10%] w-72 h-72 rounded-full bg-primary/5 blur-3xl" />
-          <div className="absolute bottom-0 left-[20%] w-96 h-96 rounded-full bg-secondary/5 blur-3xl" />
-        </div>
-        <div className="section-container relative z-10">
-          <p className="text-primary font-bold text-sm uppercase tracking-widest mb-4">Families & Caregivers</p>
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-4 sm:mb-6 max-w-4xl leading-tight">
-            Accessing <span className="text-primary">Mental Health Support</span>
-          </h1>
-          <p className="text-base sm:text-xl text-gray-600 max-w-2xl leading-relaxed">
-            We understand that seeking therapy for your child can be overwhelming. We are here to help remove the financial burden.
-          </p>
-        </div>
-      </section>
-
-      {/* How To Start — horizontal steps */}
-      <section className="py-12 bg-white">
+      {/* How To Start */}
+      <section className="py-24 bg-white">
         <div className="section-container">
           <div className="text-center mb-10">
-            <p className="text-primary font-bold text-xs uppercase tracking-widest mb-3">Getting Started</p>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900">How To Start</h2>
+             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">Getting Started</h2>
           </div>
 
-          <div className="relative grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="relative grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
             {/* Connecting line — desktop */}
             <div className="hidden md:block absolute top-10 left-[calc(16.67%+1.5rem)] right-[calc(16.67%+1.5rem)] h-0.5 bg-primary/10 z-0" />
 
@@ -113,7 +95,6 @@ export default function Therapy() {
                 <div className="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold shadow-lg mb-4">
                   {item.icon}
                 </div>
-                {/* Arrow — desktop only, between cards */}
                 {idx < 2 && (
                   <div className="hidden md:block absolute top-4 -right-4 z-20">
                     <svg className="w-5 h-5 text-primary/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -127,31 +108,25 @@ export default function Therapy() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* CTA — Ready to Start */}
-      <section className="bg-gray-50 border-y border-gray-100">
-        <div className="section-container">
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-0 rounded-2xl overflow-hidden shadow-lg">
-            <div className="md:col-span-3 bg-primary p-8 md:p-10 flex flex-col justify-center">
-              <h2 className="text-3xl font-bold text-white mb-4">Ready to Start?</h2>
+          {/* Intake + Surveys CTA */}
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-0 rounded-2xl overflow-hidden shadow-lg pt-10">
+            <div className="md:col-span-3 bg-primary p-5 sm:p-6 md:p-10 flex flex-col justify-center">
+              <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3">Ready to begin?</h3>
               <p className="text-white/70 leading-relaxed mb-6 max-w-lg">
-                Fill out our intake form to begin the process. This is the first step in receiving funding support for your child&apos;s therapy.
+                Fill out our intake form to start the process. This is the first step in receiving funding support for your child&apos;s therapy.
               </p>
-              <div className="flex flex-col sm:flex-row gap-3">
-                <a
-                  href={siteConfig.therapy.intakeFormUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-8 py-3.5 bg-white text-primary rounded-full font-bold hover:bg-gray-100 transition-all shadow-lg inline-flex items-center justify-center gap-2"
-                >
-                  Intake Form
-                  {externalIcon}
-                </a>
-              </div>
+              <a
+                href={siteConfig.therapy.intakeFormUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-3.5 bg-white text-primary rounded-full font-bold hover:bg-gray-100 transition-all shadow-lg inline-flex items-center justify-center gap-2 self-start"
+              >
+                Intake Form
+                {externalIcon}
+              </a>
             </div>
-            <div className="md:col-span-2 bg-primary/90 p-8 md:p-10 flex flex-col justify-center border-t md:border-t-0 md:border-l border-white/10">
+            <div className="md:col-span-2 bg-primary/90 p-5 sm:p-6 md:p-10 flex flex-col justify-center border-t md:border-t-0 md:border-l border-white/10">
               <p className="text-white/50 font-bold text-xs uppercase tracking-widest mb-4">Pre-Therapy Surveys</p>
               <div className="flex flex-col gap-3">
                 <a
@@ -186,10 +161,10 @@ export default function Therapy() {
         <div className="section-container max-w-4xl">
           <div className="text-center mb-8">
             <p className="text-primary font-bold text-xs uppercase tracking-widest mb-3">The Journey</p>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">What 10 Sessions of Therapy Look Like</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">What 10 Sessions of Therapy Look Like</h2>
           </div>
 
-          <div className="bg-primary/5 rounded-2xl p-6 md:p-8 border border-primary/10 mb-10">
+          <div className="bg-primary/5 rounded-2xl p-4 sm:p-6 md:p-8 border border-primary/10 mb-8 sm:mb-10">
             <h3 className="text-lg font-bold text-gray-900 mb-2">Why 10 sessions?</h3>
             <p className="text-gray-600 leading-relaxed">
               Every child&apos;s path looks a little different — some need more time, some need less. But these 10 sessions represent a real, tested rhythm of building trust, uncovering what&apos;s underneath, and helping a child come out the other side steadier than they went in.
@@ -212,7 +187,7 @@ export default function Therapy() {
 
                   {/* Content card */}
                   <div className="flex-1 pb-6 pt-4">
-                    <div className="bg-gray-50 rounded-2xl p-5 md:p-6 border border-gray-100 group-hover:border-primary/10 group-hover:shadow-md transition-all duration-300">
+                    <div className="bg-gray-50 rounded-2xl p-4 sm:p-5 md:p-6 border border-gray-100 group-hover:border-primary/10 group-hover:shadow-md transition-all duration-300">
                       <span className={`inline-block px-3 py-1 rounded-full text-xs font-bold mb-2 ${session.accent}`}>
                         {session.badge}
                       </span>
@@ -249,8 +224,8 @@ export default function Therapy() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
               </svg>
             </div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3">Are you a therapist?</h2>
-            <p className="text-lg text-gray-500 max-w-xl mx-auto mb-6 leading-relaxed">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3">Are you a therapist?</h2>
+            <p className="text-base sm:text-lg text-gray-500 max-w-xl mx-auto mb-6 leading-relaxed">
               We are always expanding our network of local Athens therapists. If you&apos;d like to partner with us to provide care, we&apos;d love to hear from you.
             </p>
             <a

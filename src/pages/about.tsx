@@ -31,23 +31,61 @@ export default function About() {
         </div>
       </section>
 
+      {/* The Data */}
       <section className="py-10 bg-white">
-        <div className="section-container grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 items-center">
-          <div className="bg-primary/5 p-4 sm:p-6 md:p-10 rounded-2xl sm:rounded-3xl border border-primary/10">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Our Commitment</h2>
-            <p className="text-gray-600 leading-relaxed mb-6">
-              We are committed to transparency, inclusivity, and rapid action. 95% of every dollar donated goes into a fund specifically for children&apos;s therapy costs.
-            </p>
-            <p className="text-sm text-gray-700 font-bold uppercase tracking-wider">Registered 501(c)(3) Non-Profit</p>
+        <div className="section-container">
+          <p className="text-primary font-bold text-xs uppercase tracking-widest mb-2">Why This Matters</p>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-6 sm:mb-8">The Data</h2>
+
+          {/* Stat highlights */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+            <div className="bg-primary/5 rounded-xl p-5 border border-primary/10 text-center">
+              <p className="text-3xl sm:text-4xl font-bold text-primary mb-1">13.6%</p>
+              <p className="text-sm text-gray-600">of children ages 4&ndash;11 have a diagnosable mental health disorder</p>
+            </div>
+            <div className="bg-primary/5 rounded-xl p-5 border border-primary/10 text-center">
+              <p className="text-3xl sm:text-4xl font-bold text-primary mb-1">1.2</p>
+              <p className="text-sm text-gray-600">child psychiatrists per 100k children in Georgia &mdash; vs. 4.5 nationally</p>
+            </div>
+            <div className="bg-primary/5 rounded-xl p-5 border border-primary/10 text-center">
+              <p className="text-3xl sm:text-4xl font-bold text-primary mb-1">1 in 4</p>
+              <p className="text-sm text-gray-600">children have a mental, emotional, or behavioral health concern</p>
+            </div>
           </div>
-          <div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Looking Forward</h2>
-            <p className="text-gray-600 leading-relaxed mb-4">
-              Expansion is on our horizon. We hope to not only support direct therapy but also fund community-wide educational programs that help normalize mental health support for children.
+
+          {/* Detail paragraphs */}
+          <div className="space-y-4 text-gray-600 leading-relaxed text-base sm:text-lg">
+            <p>
+              In Georgia, 12.3% of adolescents experience major depression &mdash; exceeding the overall adult rate of 7.8%. The state has significantly fewer child psychiatrists per capita than the national average, leaving young people particularly vulnerable to extended wait times and gaps in care.
             </p>
-            <p className="text-gray-600 leading-relaxed">
-              Based in Athens, GA, we are proud to serve our local neighbors and contribute to the well-being of the next generation.
+            <p>
+              Nationally, roughly 28% of boys and 23% of girls ages 3&ndash;17 have at least one mental, emotional, developmental, or behavioral health concern, with ADHD and anxiety disorders among the most common. Research shows that behavioral and cognitive behavioral therapy is highly effective for children ages 4&ndash;9, yet access remains limited &mdash; especially for families facing financial barriers.
             </p>
+            <p>
+              These numbers reinforce what we see every day in Northeast Georgia: children need timely access to evidence-based therapy, and cost should never be the reason they go without it.
+            </p>
+          </div>
+
+          {/* Sources */}
+          <div className="mt-6 pt-4 border-t border-gray-100">
+            <p className="text-xs text-gray-400 font-medium uppercase tracking-wider mb-2">Sources</p>
+            <ul className="text-xs text-gray-400 space-y-1">
+              <li>
+                <a href="https://mhstats.org/states/georgia" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                  MHStats.org &mdash; Georgia Mental Health Statistics
+                </a>
+              </li>
+              <li>
+                <a href="https://nschdata.org/browse/survey/results?q=11499&r=1&g=1195" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                  National Survey of Children&apos;s Health (NSCH), 2023
+                </a>
+              </li>
+              <li>
+                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10465658/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                  PMC &mdash; Mental Health Interventions for Children Ages 4&ndash;9
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>

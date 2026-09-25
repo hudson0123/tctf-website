@@ -58,8 +58,8 @@ export const siteConfig = {
   },
 
   socials: [
-    { name: "Instagram", url: "https://instagram.com" },
-    { name: "Facebook", url: "https://facebook.com" },
+    { name: "Instagram", url: "https://www.instagram.com/thrivingchildrentherapyfund" },
+    { name: "Facebook", url: "https://www.facebook.com/share/19WKvMGLPb/" },
   ],
 
   seo: {

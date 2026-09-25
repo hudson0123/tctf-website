@@ -61,9 +61,9 @@ export default function Home() {
             </div>
             <p className="mt-6 text-sm text-gray-500">
               Are you a therapist?{" "}
-              <Link href="/therapy" className="text-primary font-semibold hover:underline">
+              <a href={siteConfig.therapy.therapistApplicationUrl} target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">
                 Join our network
-              </Link>
+              </a>
             </p>
           </div>
         </div>

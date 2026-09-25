@@ -4,8 +4,8 @@ import { siteConfig } from "@/config/siteConfig";
 export default function Footer() {
   return (
     <footer className="bg-gray-50 border-t border-gray-200">
-      <div className="max-w-7xl mx-auto px-6 py-12 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 md:py-14">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Logo and About */}
           <div className="flex flex-col gap-4">
             <Link href="/" className="flex items-center gap-3">
@@ -15,8 +15,8 @@ export default function Footer() {
                 className="h-16 w-auto object-contain"
               />
             </Link>
-            <p className="text-gray-500 text-sm leading-relaxed max-w-xs">
-              Providing financial support for therapeutic services for children and their families in the Northeast Georgia area.
+            <p className="text-gray-500 text-sm leading-relaxed max-w-3xs">
+              Providing therapeutic services for children and families in the Northeast Georgia area.
             </p>
           </div>
 
@@ -64,7 +64,7 @@ export default function Footer() {
         {/* Legal Disclaimer */}
         <div className="pt-8 border-t border-gray-200 text-center">
           <p className="text-gray-400 text-xs leading-relaxed max-w-2xl mx-auto">
-            {siteConfig.global.name} is a {siteConfig.global.nonProfitStatus} Federal EIN: {siteConfig.global.ein}.
+            {siteConfig.global.name} is a {siteConfig.global.nonProfitStatus} Federal EIN: {siteConfig.global.ein}.\n
             © {new Date().getFullYear()} All rights reserved.
           </p>
         </div>

@@ -33,14 +33,14 @@ export default function Mission() {
       <Navbar />
 
       {/* Hero */}
-      <section className="pt-32 pb-16 bg-gray-50 border-b border-gray-100 overflow-hidden relative">
+      <section className="pt-24 sm:pt-32 pb-10 bg-gray-50 border-b border-gray-100 overflow-hidden relative">
         <div className="absolute inset-0">
           <div className="absolute top-10 left-[10%] w-64 h-64 rounded-full bg-primary/5 blur-3xl" />
           <div className="absolute bottom-0 right-[15%] w-96 h-96 rounded-full bg-secondary/5 blur-3xl" />
         </div>
         <div className="section-container relative z-10">
           <p className="text-primary font-bold text-sm uppercase tracking-widest mb-4">Our Purpose</p>
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight max-w-4xl">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight max-w-4xl">
             Access to mental health is a{" "}
             <span className="text-primary underline decoration-2 decoration-primary/30 underline-offset-8">fundamental right</span>.
           </h1>
@@ -48,20 +48,20 @@ export default function Mission() {
       </section>
 
       {/* Mission & Vision — side by side cards */}
-      <section className="py-16 bg-white">
+      <section className="py-10 bg-white">
         <div className="section-container grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="relative bg-gray-50 rounded-2xl p-8 md:p-10 border border-gray-100 overflow-hidden">
+          <div className="relative bg-gray-50 rounded-2xl p-5 sm:p-8 md:p-10 border border-gray-100 overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-1 bg-primary" />
-            <p className="text-primary font-bold text-xs uppercase tracking-widest mb-6">Mission</p>
-            <p className="text-xl md:text-2xl text-gray-800 leading-relaxed font-medium">
+            <p className="text-primary font-bold text-xs uppercase tracking-widest mb-4 sm:mb-6">Mission</p>
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-800 leading-relaxed font-medium">
               &ldquo;{siteConfig.mission.statement}&rdquo;
             </p>
           </div>
 
-          <div className="relative bg-gray-50 rounded-2xl p-8 md:p-10 border border-gray-100 overflow-hidden">
+          <div className="relative bg-gray-50 rounded-2xl p-5 sm:p-8 md:p-10 border border-gray-100 overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-1 bg-secondary" />
-            <p className="text-secondary font-bold text-xs uppercase tracking-widest mb-6">Vision</p>
-            <p className="text-xl md:text-2xl text-gray-800 leading-relaxed font-medium">
+            <p className="text-secondary font-bold text-xs uppercase tracking-widest mb-4 sm:mb-6">Vision</p>
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-800 leading-relaxed font-medium">
               {siteConfig.mission.vision}
             </p>
           </div>
@@ -69,17 +69,17 @@ export default function Mission() {
       </section>
 
       {/* Values */}
-      <section className="py-16 bg-gray-50 border-y border-gray-100">
+      <section className="py-10 bg-gray-50 border-y border-gray-100">
         <div className="section-container">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <p className="text-primary font-bold text-xs uppercase tracking-widest mb-3">What Guides Us</p>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900">Our Core Values</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900">Our Core Values</h2>
           </div>
 
           {/* Top row: 3 values */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
             {siteConfig.mission.values.slice(0, 3).map((value, idx) => (
-              <div key={value.name} className="group bg-white rounded-2xl p-8 border border-gray-100 hover:border-primary/20 hover:shadow-md transition-all duration-300">
+              <div key={value.name} className="group bg-white rounded-2xl p-5 sm:p-8 border border-gray-100 hover:border-primary/20 hover:shadow-md transition-all duration-300">
                 <div className="w-12 h-12 rounded-xl bg-primary/5 text-primary flex items-center justify-center mb-5 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                   {valueIcons[idx]}
                 </div>
@@ -92,7 +92,7 @@ export default function Mission() {
           {/* Bottom row: 2 values, centered */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto lg:max-w-[66.666%]">
             {siteConfig.mission.values.slice(3).map((value, idx) => (
-              <div key={value.name} className="group bg-white rounded-2xl p-8 border border-gray-100 hover:border-primary/20 hover:shadow-md transition-all duration-300">
+              <div key={value.name} className="group bg-white rounded-2xl p-5 sm:p-8 border border-gray-100 hover:border-primary/20 hover:shadow-md transition-all duration-300">
                 <div className="w-12 h-12 rounded-xl bg-primary/5 text-primary flex items-center justify-center mb-5 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                   {valueIcons[idx + 3]}
                 </div>
@@ -105,9 +105,9 @@ export default function Mission() {
       </section>
 
       {/* Non-Discrimination Policy */}
-      <section className="py-16 bg-white">
+      <section className="py-10 bg-white">
         <div className="section-container max-w-4xl">
-          <div className="flex items-center gap-4 mb-8">
+          <div className="flex items-center gap-4 mb-6">
             <div className="w-10 h-10 rounded-full bg-primary/5 flex items-center justify-center shrink-0">
               <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -115,7 +115,7 @@ export default function Mission() {
             </div>
             <h2 className="text-2xl font-bold text-gray-900">Non-Discrimination Policy</h2>
           </div>
-          <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100 text-gray-600 leading-relaxed text-sm space-y-4">
+          <div className="bg-gray-50 p-4 sm:p-8 rounded-2xl border border-gray-100 text-gray-600 leading-relaxed text-sm space-y-4">
             {siteConfig.mission.nonDiscrimination.split("\n\n").map((paragraph, idx) => (
               <p key={idx}>{paragraph}</p>
             ))}

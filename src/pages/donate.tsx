@@ -10,18 +10,18 @@ export default function Donate() {
       <Navbar />
 
       {/* Hero + CTA */}
-      <section className="pt-32 pb-16 bg-gray-50 border-b border-gray-100 relative overflow-hidden">
+      <section className="pt-24 sm:pt-32 pb-10 bg-gray-50 border-b border-gray-100 relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-10 right-[10%] w-72 h-72 rounded-full bg-primary/5 blur-3xl" />
           <div className="absolute bottom-0 left-[20%] w-96 h-96 rounded-full bg-secondary/5 blur-3xl" />
         </div>
         <div className="section-container max-w-3xl text-center relative z-10">
           <p className="text-primary font-bold text-sm uppercase tracking-widest mb-4">Support Our Cause</p>
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-6">
             Make an <span className="text-primary">Impact</span>
           </h1>
-          <p className="text-lg text-gray-600 leading-relaxed mb-10 max-w-xl mx-auto">
-            Your donation goes directly to funding therapy sessions for children in need in Athens, GA. Every contribution helps a child thrive.
+          <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-6 sm:mb-8 max-w-xl mx-auto">
+            Your donation goes directly to funding therapy sessions for children in need in Athens, GA. Every contribution, no matter the size, helps a child thrive.
           </p>
           <a
             href={siteConfig.donate.givebutterUrl}
@@ -34,7 +34,7 @@ export default function Donate() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
             </svg>
           </a>
-          <div className="flex items-center justify-center gap-6 mt-6 text-xs text-gray-400">
+          <div className="flex items-center justify-center gap-6 mt-5 text-xs text-gray-400">
             <span className="flex items-center gap-1.5">
               <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
@@ -48,15 +48,26 @@ export default function Donate() {
         </div>
       </section>
 
-      {/* Impact + Ways to Give */}
-      <section className="py-16 bg-white">
+      {/* What Your Support Makes Possible */}
+      <section className="py-12 bg-white">
         <div className="section-container max-w-5xl">
-          {/* What Your Support Makes Possible */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <div className="md:col-span-3 mb-2">
-              <p className="text-primary font-bold text-xs uppercase tracking-widest mb-3">Your Impact</p>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900">What Your Support Makes Possible</h2>
+          <div className="mb-10">
+            <p className="text-primary font-bold text-xs uppercase tracking-widest mb-3">Your Impact</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">What Your Support Makes Possible</h2>
+            <div className="max-w-3xl space-y-4 text-gray-600 leading-relaxed">
+              <p>
+                A single round of 10 therapy sessions can be the difference between a child remaining stuck in fear, anger, anxiety, or withdrawal — and a child beginning to understand their emotions, develop healthy coping skills, and build confidence. Every child&apos;s therapeutic journey looks different, but having access to a safe, supportive relationship with a trained therapist can create lasting change.
+              </p>
+              <p>
+                Your support makes these life-changing services possible, ensuring that every child can receive the care they need, regardless of their family&apos;s ability to pay.
+              </p>
+              <p>
+                When you help fund a child&apos;s therapy, you&apos;re not just covering an appointment — you&apos;re giving them a path back to feeling safe, understood, and like themselves again.
+              </p>
             </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {[
               {
                 number: "10",

@@ -10,7 +10,7 @@ export default function Donate() {
       <Navbar />
 
       {/* Hero + CTA */}
-      <section className="pt-36 sm:pt-44 pb-10 bg-gray-50 border-b border-gray-100 relative overflow-hidden">
+      <section className="pt-28 sm:pt-32 pb-10 bg-gray-50 border-b border-gray-100 relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-10 right-[10%] w-72 h-72 rounded-full bg-primary/5 blur-3xl" />
           <div className="absolute bottom-0 left-[20%] w-96 h-96 rounded-full bg-secondary/5 blur-3xl" />

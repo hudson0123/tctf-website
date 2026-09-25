@@ -10,8 +10,8 @@ export default function Footer() {
           <div className="flex flex-col gap-4">
             <Link href="/" className="flex items-center gap-3">
               <img
-                src="/logo.png"
-                alt="Logo"
+                src="/images/tctf-logo-side.JPEG"
+                alt={siteConfig.global.name}
                 className="h-12 sm:h-14 md:h-16 w-auto object-contain"
               />
             </Link>
@@ -64,7 +64,8 @@ export default function Footer() {
         {/* Legal Disclaimer */}
         <div className="pt-8 border-t border-gray-200 text-center">
           <p className="text-gray-400 text-xs leading-relaxed max-w-2xl mx-auto">
-            {siteConfig.global.name} is a {siteConfig.global.nonProfitStatus} Federal EIN: {siteConfig.global.ein}.\n
+            {siteConfig.global.name} is a {siteConfig.global.nonProfitStatus}. Federal EIN: {siteConfig.global.ein}.
+            <br />
             © {new Date().getFullYear()} All rights reserved.
           </p>
         </div>

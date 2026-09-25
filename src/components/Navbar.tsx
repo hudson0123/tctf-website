@@ -25,7 +25,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
           <img
-            src="/logo.png"
+            src="/images/tctf-logo-side.JPEG"
             alt={siteConfig.global.name}
             className="h-20 sm:h-20 md:h-14 w-auto object-contain"
           />
@@ -55,6 +55,7 @@ export default function Navbar() {
         {/* Mobile Hamburger Menu Button */}
         <button
           aria-label={isOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isOpen}
           data-testid="mobile-menu-button"
           className="md:hidden text-gray-600 p-2 -m-2"
           onClick={() => setIsOpen(!isOpen)}

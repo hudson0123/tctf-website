@@ -3,7 +3,7 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
-import FloatingDonateButton from "@/components/FloatingDonateButton";
+
 import { siteConfig } from "@/config/siteConfig";
 
 export default function Home() {
@@ -19,14 +19,14 @@ export default function Home() {
           {/* Mobile: hero-1, Desktop: child-1 */}
           <Image
             src="/images/hero-1.jpg"
-            alt="Child smiling"
+            alt="Children playing outdoors"
             fill
             className="object-cover object-top lg:hidden"
             priority
           />
           <Image
             src="/images/hero-2.jpg"
-            alt="Child smiling"
+            alt="Children in a group activity"
             fill
             className="object-cover hidden lg:block"
             style={{ objectPosition: "center 30%" }}
@@ -125,13 +125,12 @@ export default function Home() {
             </Link>
           </div>
           <div className="relative aspect-video lg:aspect-4/3 rounded-2xl overflow-hidden">
-            <Image src="/images/child-1.jpg" alt="Child smiling" fill className="object-cover" />
+            <Image src="/images/child-1.jpg" alt="Child receiving support" fill className="object-cover" />
           </div>
         </div>
       </section>
 
       <Footer />
-      <FloatingDonateButton />
     </div>
   );
 }

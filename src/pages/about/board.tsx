@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
@@ -8,7 +9,7 @@ export default function BoardOfDirectors() {
       <SEO title="Board of Directors" />
       <Navbar />
 
-      <section className="pt-36 sm:pt-44 pb-10 bg-gray-50 border-b border-gray-100">
+      <section className="pt-28 sm:pt-32 pb-10 bg-gray-50 border-b border-gray-100">
         <div className="section-container text-center">
           <p className="text-primary font-bold text-sm uppercase tracking-widest mb-4">Our Leadership</p>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
@@ -39,9 +40,9 @@ export default function BoardOfDirectors() {
           <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-6 sm:mb-8">
             We are always looking for passionate community members who want to donate their time and expertise to help the children of Athens.
           </p>
-          <a href="/contact" className="w-full sm:w-auto px-6 sm:px-10 py-3 sm:py-4 bg-white text-primary rounded-full font-bold text-base sm:text-lg hover:bg-gray-100 transition-all inline-block text-center shadow-xl">
+          <Link href="/contact" className="w-full sm:w-auto px-6 sm:px-10 py-3 sm:py-4 bg-white text-primary rounded-full font-bold text-base sm:text-lg hover:bg-gray-100 transition-all inline-block text-center shadow-xl">
             Contact Us
-          </a>
+          </Link>
         </div>
       </section>
 

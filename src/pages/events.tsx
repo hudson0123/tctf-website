@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -26,13 +27,14 @@ function formatDate(dateStr: string) {
 }
 
 export default function Events() {
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-
-  const upcoming = events.filter((e) => {
-    const [y, m, d] = e.date.split("-").map(Number);
-    return new Date(y, m - 1, d) >= today;
-  });
+  const upcoming = useMemo(() => {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    return events.filter((e) => {
+      const [y, m, d] = e.date.split("-").map(Number);
+      return new Date(y, m - 1, d) >= today;
+    });
+  }, []);
 
   return (
     <div className="min-h-screen bg-white">

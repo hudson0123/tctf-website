@@ -63,7 +63,7 @@ export const siteConfig = {
   ],
 
   seo: {
-    defaultTitle: "Facilitating Therapeutic Access for Children | Northeast Georgia",
+    defaultTitle: "Thriving Children Therapy Fund | Facilitating Therapeutic Access for Children",
     defaultDescription: "Providing financial support for children's therapy and mental health services in the Northeast Georgia area.",
     keywords: ["Non-profit", "Children's Mental Health", "Therapy Fund", "Athens GA", "Mental Health Support"],
   }

@@ -49,7 +49,7 @@ export default function Therapy() {
       <Navbar />
 
       {/* How To Start */}
-      <section className="py-24 bg-white">
+      <section className="pt-28 sm:pt-32 pb-10 bg-white">
         <div className="section-container">
           <div className="text-center mb-10">
              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">Getting Started</h2>

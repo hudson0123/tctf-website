@@ -10,7 +10,7 @@ export default function Contact() {
       <SEO title="Contact Us" />
       <Navbar />
 
-      <section className="pt-36 sm:pt-44 pb-10 bg-white">
+      <section className="pt-28 sm:pt-32 pb-10 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <p className="text-primary font-bold text-sm uppercase tracking-widest mb-3">Get In Touch</p>
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
@@ -58,9 +58,9 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Socials + Quick Links */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="bg-primary text-gray-50 rounded-xl p-5 border border-gray-100">
+          {/* Quick Links */}
+          <div>
+            <div className="bg-primary text-gray-50 rounded-xl p-5">
               <h3 className="font-bold mb-3">Quick Links</h3>
               <div className="flex flex-col gap-3">
                 {[

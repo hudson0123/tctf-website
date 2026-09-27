@@ -16,7 +16,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-gray-500 text-sm leading-relaxed max-w-3xs">
-              Providing therapeutic services for children and families in the Northeast Georgia area.
+              {siteConfig.mission.statement}
             </p>
           </div>
 
